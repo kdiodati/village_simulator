@@ -1,0 +1,82 @@
+Village Builder
+
+
+Map:
+
+    A board of a set size (probably much larger than the othello boards) that is filled with tiles representing the terrain (plains, mountains, forest, lakes, etc.) that will be denoted by unique ASCII symbols for the terminal version and graphics for the GUI version (if implemented). The map is a birds-eye view on the village and will serve as the main game screen.
+
+Tiles:
+
+    Tiles are the regions that fill the map. Each tile has a type (plains, mountains, forest, lakes, etc.) which determines what types of buildings can be constructed there and what types of resources they provide. Tiles have a set amount of space and resources, so the player will have to manage what buildings they want. A tile's resources are infinite, but the rate at which they are replenished are not. This way the player has to balance between over-harvesting and obtaining resources for their village.
+
+Buildings:
+    Plain Tiles:
+        - Farms -> Provide Food
+    Mountain Tiles:
+        - Quarry -> Provide Stone
+    Forest Tiles:
+        - Lumberjack -> Provide Logs
+    Lake Tiles:
+        - Fishing -> Provide Food -> Provide Water?
+    Housing?:
+        - Each Housing Development allows a certain amount of settlers to be in the community
+    Defenses?:
+        - Defenses allow a lower chance of villager death during attacks?
+    Hunting Tiles:
+	- These could be any of the natural tiles, but you specify that you want it to be hunted on rather than mined, farmed, etc.
+    Town Hall:
+	- The starting tile (the player chooses where to put this and they have to expand their village out from it.
+    Store:
+	- Could earn gold which you can use to buy additional land, resources to construct new buildings or possibly upgrade existing ones.
+    Road:
+	- Increases gold production of stores, and increases chance of recruiting new villagers (caveat is nothing else can be built there).
+
+Villagers:
+    Each villager requires food in order to survive. The player needs to balance each villager's needs so their village will survive. Each villager has a job that the player will set them to do. Each villager will have several traits (ie preferred job, family, skills, etc.).
+
+Gameplay:
+     Players will start off with a central building (town hall) and a few civilians (perhaps one for each type of resource that's necessary ie farmer, forester, and builder) to get them started.
+    
+Seasons:
+    Possibly add a season element into game. During certain season output of resources is slowed
+        - During winter farms provide only half food, need more logs for fires, etc.
+
+Time/Progression:
+    Each stage of the game works in a planning stage (where you decide what's to be built and any other decisions) where time is frozen and then the game will jump forward a set amount of time (could be a day/week/month etc.) after you decide on your plan and you go to the next stage after seeing what happened.
+    
+Random Events:
+    Random events have a chance of occuring each turn, where villagers can be found/lost and resources could be found/more plentifully harvested/lost/harvested less
+
+Implementation:
+    Map:
+        The map could be either preset, or randomly generated.
+            -Benefit of preset is that we could design a map that has decent placements of all resources and ensures similar challenge each playthrough.
+            -Benefit of random generation is that each game is unique and can allow for more playability
+            -Could even do both, have a preset map that you can play on, or choose to play on a procedural map
+        We can figure out a good size during testing, or if there should be dynamic sizing (i.e. player deciding how big the map should be). I think we could also make it so that players can buy more land and the grid can expand in-game.
+    
+    Tiles:
+        Tiles are pretty self explanitory, shouldn't be any challenges in implementation.
+        
+    Buildings:
+        -there will need to be a check to ensure that a building is built on the correct tile.
+        -should be not too difficult to implement
+        -update the map after built
+    
+    Resources:
+        -should be a rather simple implementation, an int to determine how much is had.
+    
+    Villagers:
+        -creation of a villager class will be vital in execution of this aspect
+        
+    Events:
+        -Should there be a limit on how many events can happen at once?
+        -Occurence of events can be figured out in playtesting
+
+	-Raids -> has potential to kill villagers -> can gain resources if victorious
+	-Flood -> stops production for several days
+	-Earthquake -> has potential to destroy buildings
+	-Birth -> two of the villagers have a child who can begin work after a set time
+	-Recruitment -> visitor(s) agree to join the village
+	-Fire -> has potential to kill villagers and destroy buildings
+	-Raids (on enemies) -> player can choose to send some villagers away to raid a neighboring village (has potential to earn a lot of resources (maybe someday we could allow the player to establish and control a second city), but could result in the death of players' own villagers or possibly spark a retaliation raid on players' village

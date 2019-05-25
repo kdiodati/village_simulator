@@ -1,0 +1,1 @@
+This week we flushed out a lot of the main game mechanics and added them to their respective menus. The main logic of the game is complete and we are working on tying everything together into the main game loop. Going into the final week, we will work on finishing the game itself and polishing the code/game variables.

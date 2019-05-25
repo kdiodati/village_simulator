@@ -1,0 +1,2 @@
+This week we started coding our game. After having a rough idea of file dependicies laid out and what each file implements in the project we have begun writing the implementations for them. Because of our thorough planning, everyone in the group has something they can be working on. Our plan throughout this week is to get working components -- basic and simplified -- of the main parts of the game: a working map, user input interface, and villagers. Once we have a simplified version then
+we will work on adding details to our game.

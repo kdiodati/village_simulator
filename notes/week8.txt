@@ -1,0 +1,3 @@
+Had a group meeting on thursday to explain what we had done and decide our next week of progress to do.
+Made a deadline to have our first working prototype completed by Sunday, so that we have plenty of time to bug fix and make the project more feature rich. Separated menus into separate files according to functionality with common functions (rather than classes due to the structure of our game loop), added details to villagers and buildings, and added our Makefile. Our plan going into next week (after finishing our prototype) is to bug-fix and begin adding events and more details to our
+game.

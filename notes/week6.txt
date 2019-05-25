@@ -1,0 +1,5 @@
+This week we continued to brainstorm ideas for our game and discussing the details of each element.
+We created a basic file hierarchy layout, as well as some basic ideas of how to accomplish each element.
+Most of our time has been on getting on the same page about the implementation of our project, making
+sure that we are all happy with what we are creating, and that all of our ideas are included. The real
+work will begin after we finish our final programming assignment in this course.

@@ -1,0 +1,7 @@
+Name files were found online.
+
+male_names.txt - https://github.com/arineng/arincli/blob/master/lib/male-first-names.txt
+
+female_names.txt - https://github.com/arineng/arincli/blob/master/lib/female-first-names.txt
+
+surnames.txt - https://github.com/arineng/arincli/blob/master/lib/last-names.txt

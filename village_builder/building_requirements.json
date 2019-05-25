@@ -1,0 +1,36 @@
+{
+  "Farm": {
+    "Tiles": [
+      "Plains"
+    ],
+    "Resources": {
+      "Logs": 10
+    }
+  },
+  "Quarry": {
+      "Tiles": [
+        "Mountains"
+      ],
+      "Resources": {
+        "Logs": 50,
+        "Stone": 15
+      }
+  },
+  "Lumberjack Hut": {
+      "Tiles": [
+          "Forest"
+      ],
+      "Resources": {
+          "Logs": 25
+      }
+  },
+  "Water Source": {
+      "Tiles": [
+          "Lake"
+      ],
+      "Resources": {
+          "Logs": 40,
+          "Stone": 10
+      } 
+  }
+}

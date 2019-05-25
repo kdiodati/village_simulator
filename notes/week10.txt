@@ -1,0 +1,1 @@
+This week we finished our project and implemented input checks in the game menu, exception handling when using pointers, and stylizing our code with comments and fixing indentations. We ran into some last minute problems with some of the actions, but were able to quickly rectify them. Lastly, we wrote our presentation.
